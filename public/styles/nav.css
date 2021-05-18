@@ -19,3 +19,7 @@ nav span.tweeter-title {
   font-family: 'Bungee', cursive;
   font-size: 1.8em;
 }
+
+nav span.add-tweet{
+  margin-left: auto;
+}
