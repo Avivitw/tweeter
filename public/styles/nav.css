@@ -1,6 +1,10 @@
 nav {
   display: flex;
   height: 120px;
+  width: 100%;
+  z-index: 100; 
+  position: fixed;
+  
  
   align-items: center;
   justify-content: flex-start;
@@ -10,8 +14,6 @@ nav {
   color: #FFFFFF;
   background-color: #4056A1;
   box-shadow: 2px 4px 10px #aaa;
-  z-index: 100; position: fixed;
-  
     
 }
 

@@ -1,13 +1,20 @@
 
 header {
 
+  display: flex;
+  flex-direction:column;
   height: 400px;
-  width: auto;
+  width: 100%;
+  padding-top: 136px;
 
+  /* justify-content: center;
+  align-items: center; */
+
+ 
+}
+header div {
+  display: flex;
   justify-content: center;
-  align-items: center;
-
-  z-index: -1; position: fixed;
 }
 
 p.bkimage {
