@@ -1,0 +1,40 @@
+.new-tweet {
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+section.new-tweet form label{
+  display: block;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
+
+textarea#tweet-text {
+  background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+    height: 1.4em;
+    width: 100%;
+    resize: none;
+}
+
+.new-tweet-bottom {
+  display: flex;
+  font-family: 'Bungee', cursive;
+ 
+}
+.new-tweet-bottom .counter {
+  margin-left: auto;
+}
+
+.new-tweet-bottom button{
+  color: #FFFFFF;
+  background-color: #4056A1;
+}
