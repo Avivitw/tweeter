@@ -1,0 +1,17 @@
+
+header {
+
+  height: 400px;
+  width: auto;
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: -1; position: fixed;
+}
+
+p.bkimage {
+  background-image: "/images/cream-dust.png";
+  background-color: #4400ab;
+}
+
