@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  height: 120px;
+ 
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1.5em;
+  
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #4056A1;
+  box-shadow: 2px 4px 10px #aaa;
+  
+    
+}
+
+
+nav span.tweeter-title {
+  font-family: 'Bungee', cursive;
+  font-size: 1.8em;
+}
