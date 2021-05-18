@@ -18,6 +18,9 @@ nav {
     
 }
 
+nav:hover  span{
+  background-color: green;
+}
 
 nav span.tweeter-title {
   font-family: 'Bungee', cursive;
