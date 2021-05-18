@@ -17,10 +17,15 @@ html {
 body {
   color: #545149;
   font-size: 24px;
+
   font-family: 'Source Sans Pro', sans-serif;
   background-image: url("/images/cream-dust.png");
   background-repeat: repeat;
-  background-color: #eb986b;
+  background-color: #f8ac84;
+}
+body main {
+  width: 90%;
+  margin: 0 auto; 
 }
 
 
