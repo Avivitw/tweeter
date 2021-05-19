@@ -21,13 +21,17 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   background-image: url("/images/cream-dust.png");
   background-repeat: repeat;
-  background-color: #f8ac84;
+  background-color: #f3d2c0;
 }
 body main {
   width: 90%;
   margin: 0 auto; 
 }
 
+body main.container section {
+  width: 70%;
+  margin: 0 auto;
+}
 
 
 

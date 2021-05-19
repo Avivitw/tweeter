@@ -1,5 +1,5 @@
 
-header {
+.main-header {
 
   display: flex;
   flex-direction:column;
@@ -12,7 +12,8 @@ header {
 
  
 }
-header div {
+
+.main-header div {
   display: flex;
   justify-content: center;
 }
