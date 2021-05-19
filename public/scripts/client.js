@@ -39,7 +39,7 @@ const createTweetElement = function(tweet){
 
   let $tweet =   $(`<article class="tweet">
                     <header>
-                      <span class="name"> <img src="${tweet.user.avatars}" /> ${tweet.user.name}</span>
+                      <span class="name"> <img src="${tweet.user.avatars}"/> ${tweet.user.name}</span>
                       <span class="handle">${tweet.user.handle}</span>
                     </header>
                     <div>${tweet.content.text}</div>
