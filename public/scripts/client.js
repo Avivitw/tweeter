@@ -34,36 +34,42 @@ const data = [
   }
 ]
 
+$( document ).ready(function() {
+  
 
-const createTweetElement = function(tweet){
+  const createTweetElement = function(tweet){
+  
+    let $tweet =   $(`<article class="tweet">
+                      <header>
+                        <span class="name"> <img src="${tweet.user.avatars}"/> ${tweet.user.name}</span>
+                        <span class="handle">${tweet.user.handle}</span>
+                      </header>
+                      <div>${tweet.content.text}</div>
+                      <footer>
+                        <span>${timeago.format(tweet.created_at)}</span>
+                        <i class="fas fa-heart"></i><i class="fas fa-retweet"></i><i class="fas fa-flag"></i>
+                      </footer>
+                    </article>`);
+  
+    return $tweet;
+  
+  }
+  
+  
+  const renderTweets = function(tweets){
+  
+    // loops through tweets
+    for (const tweet of tweets) {
+      let $tweet = createTweetElement(tweet);
+      $('.tweets-list').append($tweet);
+    }  
+  };
+  
+  renderTweets(data);
 
-  let $tweet =   $(`<article class="tweet">
-                    <header>
-                      <span class="name"> <img src="${tweet.user.avatars}"/> ${tweet.user.name}</span>
-                      <span class="handle">${tweet.user.handle}</span>
-                    </header>
-                    <div>${tweet.content.text}</div>
-                    <footer>
-                      <span>${timeago.format(tweet.created_at)}</span>
-                      <i class="fas fa-heart"></i><i class="fas fa-retweet"></i><i class="fas fa-flag"></i>
-                    </footer>
-                  </article>`);
-
-  return $tweet;
-
-}
+});
 
 
-const renderTweets = function(tweets){
-
-  // loops through tweets
-  for (const tweet of tweets) {
-    let $tweet = createTweetElement(tweet);
-    $('.tweets-list').append($tweet);
-  }  
-};
-
-renderTweets(data);
 
 // const $tweet = createTweetElement(tweetObj);
 
