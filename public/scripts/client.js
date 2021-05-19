@@ -67,12 +67,25 @@ $( document ).ready(function() {
   
   renderTweets(data);
 
+
+
+
+  $('.new-tweet form').submit(function(event) {
+    event.preventDefault();
+    console.log( $( this ).serialize());
+
+    let tweetForm =  $(this).serialize();
+
+    $.ajax("/tweets",{
+      method: "POST",
+      dataType: "json",
+      data: {"text": tweetForm}
+    });
+
+  });
+
+
+
+
+
 });
-
-
-
-// const $tweet = createTweetElement(tweetObj);
-
-// // // Test / driver code (temporary)
-// // console.log($tweet); // to see what it looks like
-// $('.tweets-list').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
