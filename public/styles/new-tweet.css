@@ -38,3 +38,6 @@ textarea#tweet-text {
   color: #FFFFFF;
   background-color: #4056A1;
 }
+.invalid {
+  color: red;
+}
