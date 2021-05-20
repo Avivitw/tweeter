@@ -1,8 +1,7 @@
 body main.container section.new-tweet {
   margin-top: 30px;
+  display: none;
 }
-
-
 
 
 section.new-tweet form label{
@@ -24,6 +23,7 @@ textarea#tweet-text {
     height: 1.4em;
     width: 100%;
     resize: none;
+    outline: none;
 }
 
 .error-message {

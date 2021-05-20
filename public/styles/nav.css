@@ -26,6 +26,7 @@ nav span.tweeter-title {
 nav span.add-tweet{
   margin-left: auto;
   text-align: center;
+  cursor: pointer;
 }
 
 
@@ -34,7 +35,7 @@ nav span.add-tweet i{
 
 }
 
-.animated:hover {
+span.add-tweet:hover .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -60,7 +61,7 @@ nav span.add-tweet i{
     transform: translateY(-5px);
   }
 }
-.bounce:hover {
+span.add-tweet:hover .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }

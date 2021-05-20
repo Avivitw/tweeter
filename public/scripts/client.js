@@ -46,6 +46,13 @@ $(document).ready(function() {
       }, 4000);
   }
 
+  $('.add-tweet').click(function(){
+    console.log(`x`);
+    $('.new-tweet').slideToggle()
+    $('#tweet-text').focus();
+  })
+
+
 
   $('.new-tweet form').submit(function(event) {
     event.preventDefault();
