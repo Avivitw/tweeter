@@ -15,13 +15,14 @@ $(document).ready(function() {
                         <span class="name"> <img src="${tweet.user.avatars}"/> ${tweet.user.name}</span>
                         <span class="handle">${tweet.user.handle}</span>
                       </header>
-                      <div>${tweet.content.text}</div>
+                      <div class="content-text"></div>
                       <footer>
                         <span>${timeago.format(tweet.created_at)}</span>
                         <i class="fas fa-heart"></i><i class="fas fa-retweet"></i><i class="fas fa-flag"></i>
                       </footer>
                     </article>`);
-  
+    //
+    $tweet.find('.content-text').text(tweet.content.text);
     return $tweet;
   
   };
@@ -49,7 +50,7 @@ $(document).ready(function() {
 
     let tweetForm =  $(this).serialize();
 
-      console.log(`tweetform`, tweetForm);
+      // console.log(`tweetform`, tweetForm);
     $.ajax("/tweets",{
       method: "POST",
       data: tweetForm
