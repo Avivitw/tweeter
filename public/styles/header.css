@@ -5,7 +5,6 @@
   flex-direction:column;
   height: 400px;
   width: 100%;
-  margin-top: 120px;
   background-image: url("/images/cream-dust.png");
   background-repeat: repeat;
   background-color: #6457A6;
@@ -20,5 +19,21 @@
 
 .main-header div img {
   margin-top: 27px;
+}
+
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+  header.main-header{
+    flex-direction: column;
+    width: 30%;
+    margin-top: 9em;
+    margin-left: 2em;
+
+
+
+
+  }
 }
 

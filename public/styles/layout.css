@@ -31,8 +31,25 @@ body main.container section {
   margin: 0 auto;
 }
 
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
 
+  body {
+    display: flex;
+  }
+  
+  body main.container{
+    width: 60%;
+    margin-top: 8em;
+    margin-left: 2em;
+    margin-right: 2em;
+    flex-grow: 1;
+    
+  }
 
-
-
+  body main.container section {
+    margin-right: 0;
+    width: 90%;
+  }
+}
 
