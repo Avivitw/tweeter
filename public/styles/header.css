@@ -5,11 +5,11 @@
   flex-direction:column;
   height: 400px;
   width: 100%;
-  margin-top: 136px;
-
-  /* justify-content: center;
-  align-items: center; */
-
+  margin-top: 120px;
+  background-image: url("/images/cream-dust.png");
+  background-repeat: repeat;
+  background-color: #6457A6;
+  color: #eeeeee;
  
 }
 
@@ -18,5 +18,7 @@
   justify-content: center;
 }
 
-
+.main-header div img {
+  margin-top: 27px;
+}
 
