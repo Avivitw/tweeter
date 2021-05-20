@@ -31,7 +31,7 @@ $(document).ready(function() {
   
     for (const tweet of tweets) {
       let $tweet = createTweetElement(tweet);
-      $('.tweets-list').append($tweet);
+      $('.tweets-list').prepend($tweet);
     }
   };
   
@@ -55,7 +55,8 @@ $(document).ready(function() {
       data: tweetForm
     })
     .done(function(data) {
-      $tweetText.val("").trigger('input');   
+      $tweetText.val("").trigger('input')
+      loadTweets();   
     });
   });
 
@@ -67,6 +68,7 @@ $(document).ready(function() {
       dataType: "json"
       })
     .then(function (tweets) {
+      $(`.tweets-list`).empty();
       console.log('Success: ', tweets);
       renderTweets(tweets);
     });
