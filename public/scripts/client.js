@@ -13,7 +13,8 @@ $(document).ready(function() {
     
     let $tweet =   $(`<article class="tweet">
     <header>
-    <span class="name"> <img src="${tweet.user.avatars}"/> ${tweet.user.name}</span>
+    <img src="${tweet.user.avatars}"/>
+    <span class="name">${tweet.user.name}</span>
     <span class="handle">${tweet.user.handle}</span>
     </header>
     <div class="content-text"></div>

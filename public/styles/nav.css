@@ -5,16 +5,11 @@ nav {
   width: 100%;
   z-index: 100; 
   position: fixed;
-  
- 
   align-items: center;
   justify-content: flex-start;
   padding: 0 1.5em;
-  
   font-weight: 400;
   color: #FFFFFF;
- 
-    
 }
 
 nav span.tweeter-title {
@@ -31,8 +26,6 @@ nav span.add-tweet{
 
 nav span.add-tweet i{
   color: #da6e3d;
-  
-
 }
 
 span.add-tweet:hover .animated {
@@ -76,7 +69,6 @@ span.add-tweet:hover .bounce {
 
   nav span.add-tweet i{
     color: #6457A6;
-  
   }
   
 }

@@ -10,17 +10,13 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
   font-size: 24px;
-
   font-family: 'Source Sans Pro', sans-serif;
-
 }
+
 body main {
   width: 90%;
   margin: 0 auto; 

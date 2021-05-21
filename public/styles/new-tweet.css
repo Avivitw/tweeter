@@ -3,27 +3,22 @@ body main.container section.new-tweet {
   display: none;
 }
 
-
 section.new-tweet form label{
   display: block;
   font-size: 1.1em;
   font-weight: 600;
 }
 
-
-
 textarea#tweet-text {
   background: transparent;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    
-    border-bottom: 2px solid rgb(0, 0, 0);
-    
-    height: 1.4em;
-    width: 100%;
-    resize: none;
-    outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  height: 1.4em;
+  width: 100%;
+  resize: none;
+  outline: none;
 }
 
 .error-message {
@@ -40,7 +35,6 @@ textarea#tweet-text {
 .new-tweet-bottom {
   display: flex;
   font-family: 'Bungee', cursive;
- 
 }
 .new-tweet-bottom .counter {
   margin-left: auto;
