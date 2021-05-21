@@ -1,19 +1,22 @@
+@import 'base';
 body main.container section.new-tweet {
   margin-top: 30px;
   display: none;
+
+  form label{
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
 }
-body main.container section.new-tweet form label {
-  display: block;
-  font-size: 1.1em;
-  font-weight: 600;
-}
+
 
 textarea#tweet-text {
   background: transparent;
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(0, 0, 0);
   height: 1.4em;
   width: 100%;
   resize: none;
@@ -21,10 +24,10 @@ textarea#tweet-text {
 }
 
 .error-message {
-  border: 2px solid #e93636;
-  color: #e93636;
+  border: 2px solid $alert-color;
+  color: $alert-color;
   border-radius: 5px;
-  background-color: #f9f8ea;
+  background-color: $base-color;
   padding: 12px;
   margin: 8px 0;
   font-weight: bold;
@@ -33,16 +36,18 @@ textarea#tweet-text {
 
 .new-tweet-bottom {
   display: flex;
-  font-family: "Bungee", cursive;
-}
-.new-tweet-bottom .counter {
-  margin-left: auto;
-}
-.new-tweet-bottom button {
-  color: #f9f8ea;
-  background-color: #da6e3d;
+  font-family: 'Bungee', cursive;
+
+  .counter {
+    margin-left: auto;
+  }
+
+  button{
+    color: $base-color;
+    background-color: $secondary-color;
+  }
 }
 
 .invalid {
-  color: #e93636;
+  color: $alert-color;
 }

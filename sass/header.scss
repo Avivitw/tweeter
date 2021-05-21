@@ -1,27 +1,36 @@
+@import 'base';
+
 .main-header {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   height: 400px;
   width: 100%;
   background-image: url("/images/cream-dust.png");
   background-repeat: repeat;
-  background-color: #6457a6;
-  color: #f9f8ea;
+  background-color: $main-color;
+  color: $base-color;
+
+  div {
+    display: flex;
+    justify-content: center;
+    img {
+      margin-top: 27px;
+    }
+  }
+
+  
 }
-.main-header div {
-  display: flex;
-  justify-content: center;
-}
-.main-header div img {
-  margin-top: 27px;
-}
+
+
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-  header.main-header {
+
+  header.main-header{
     flex-direction: column;
     width: 30%;
     margin-top: 9em;
     margin-left: 2em;
   }
 }
+

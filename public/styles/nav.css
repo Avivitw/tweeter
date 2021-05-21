@@ -3,32 +3,24 @@ nav {
   display: flex;
   height: 120px;
   width: 100%;
-  z-index: 100; 
+  z-index: 100;
   position: fixed;
   align-items: center;
   justify-content: flex-start;
   padding: 0 1.5em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #f9f8ea;
 }
-
 nav span.tweeter-title {
-  font-family: 'Bungee', cursive;
+  font-family: "Bungee", cursive;
   font-size: 1.8em;
 }
-
-nav span.add-tweet{
+nav span.add-tweet {
   margin-left: auto;
   text-align: center;
   cursor: pointer;
 }
-
-
-nav span.add-tweet i{
-  color: #da6e3d;
-}
-
-span.add-tweet:hover .animated {
+nav span.add-tweet:hover .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -54,22 +46,21 @@ span.add-tweet:hover .animated {
     transform: translateY(-5px);
   }
 }
-span.add-tweet:hover .bounce {
+nav span.add-tweet:hover .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
+}
+nav span.add-tweet i {
+  color: #da6e3d;
 }
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-
   nav {
     background-color: #da6e3d;
     box-shadow: 2px 4px 10px #aaa;
   }
-
-  nav span.add-tweet i{
-    color: #6457A6;
+  nav span.add-tweet i {
+    color: #6457a6;
   }
-  
 }
-

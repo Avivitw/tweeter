@@ -6,22 +6,21 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-
 body {
   color: #545149;
   font-size: 24px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f9f8ea;
 }
-
-body main {
+body main.container {
   width: 90%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
-
 body main.container section {
   width: 70%;
   margin: 0 auto;
@@ -29,23 +28,18 @@ body main.container section {
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-
   body {
     display: flex;
   }
-  
-  body main.container{
+  body main.container {
     width: 60%;
     margin-top: 8em;
     margin-left: 2em;
     margin-right: 2em;
     flex-grow: 1;
-    
   }
-
   body main.container section {
     margin-right: 0;
     width: 90%;
   }
 }
-

@@ -12,64 +12,51 @@
   min-height: 180px;
   margin-top: 30px;
 }
-
 .tweet:hover {
-  box-shadow: 8px 8px 0px rgba(100,100,100,0.3) ;
+  box-shadow: 8px 8px 0px rgba(100, 100, 100, 0.3);
 }
-
 .tweet header {
   flex-grow: 1;
   font-size: 20px;
   display: flex;
 }
-
 .tweet header span {
   align-self: center;
 }
-
+.tweet header span.name {
+  margin-left: 12px;
+}
+.tweet header span.handle {
+  margin-left: auto;
+  margin-right: 12px;
+  color: #999999;
+}
 .tweet header img {
   margin: 12px 0 0 12px;
   width: 48px;
   height: 48px;
 }
-
-.tweet header .name {
-  margin-left: 12px;
-}
-
-.tweet header .handle {
-  margin-left: auto;
-  margin-right: 12px;;
-  color: #999999;
-}
-
 .tweet div {
   flex-grow: 3;
   border-bottom: solid 2px #000000;
   margin: 9px;
   padding: 0 3px 4px;
 }
-
 .tweet footer {
   flex-grow: 1;
   margin: 0 12px;
 }
-
-.tweet footer span{
-float: left;
-font-size: 12px;
-font-weight: bold;
-margin-bottom: 8px;
+.tweet footer span {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
-
-.tweet footer i{
+.tweet footer i {
   float: right;
   font-size: 14px;
-  margin-left:5px;
+  margin-left: 5px;
 }
-
 .tweet footer i:hover {
-  color: mediumslateblue;
+  color: #da6e3d;
 }
-
-
