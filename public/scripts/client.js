@@ -23,7 +23,6 @@ $(document).ready(function() {
     <i class="fas fa-heart"></i><i class="fas fa-retweet"></i><i class="fas fa-flag"></i>
     </footer>
     </article>`);
-    //
     $tweet.find('.content-text').text(tweet.content.text);
     return $tweet;
     
@@ -68,7 +67,6 @@ $(document).ready(function() {
 
     let tweetForm =  $(this).serialize();
 
-      // console.log(`tweetform`, tweetForm);
     $.ajax("/tweets",{
       method: "POST",
       data: tweetForm

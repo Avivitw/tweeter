@@ -5,5 +5,4 @@ $(document).ready(function() {
     $counter.toggleClass(`invalid`, tweetLength > 140);
 
   })
-  // console.log("were ready")
 });
