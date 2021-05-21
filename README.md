@@ -1,6 +1,9 @@
 # Tweeter Project
 
 *Tweeter is a simple, single-page Twitter clone.*
+This project was created and published by me as part of my learnings at Lighthouse Labs.
+
+
 
 ## Screenshots
 !["Gif demo"](https://github.com/Avivitw/tweeter/blob/master/docs/tweeeter_demo.gif?raw=true)
@@ -10,7 +13,7 @@
 
 ## Stretch/Additional Features
 - Navigation Bar
-- Reorganize the css file using SASS
+- Reorganize the css files using Sass
 
 
 ## Getting Started
@@ -19,12 +22,15 @@
 2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
+5. For updating the scss files to css, run: `npm run sass-watch` command. 
 
 ## Dependencies
 
 - Express
-- Node 5.10.x or above
+- Node 12.x or above
 - Body-parser
 - Chance
 - Md5
 - Morgan
+- Nodemon
+- Sass
