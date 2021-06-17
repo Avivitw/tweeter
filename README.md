@@ -2,7 +2,7 @@
 
 *Tweeter is a simple, single-page Twitter clone.*
 
-This project is my solution to this exersize and published by me as part of my learnings at Lighthouse Labs.
+This project is my solution to this exercise and published by me as part of my learnings at Lighthouse Labs.
 
 
 
